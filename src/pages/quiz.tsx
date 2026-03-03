@@ -16,7 +16,7 @@ function shuffleArray<T>(arr: T[]): T[] {
 
 export default function QuizPage() {
   const navigate = useNavigate();
-  const { quizSettings, questions, setQuestions, setIsQuizActive, updateAnswer, toggleFlag } = useQuiz();
+  const { quizSettings, questions, setQuestions, setIsQuizActive, updateAnswer } = useQuiz();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const [loading, setLoading] = React.useState(true);
